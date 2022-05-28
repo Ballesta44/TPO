@@ -30,7 +30,8 @@ header{
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: center;
-    background-image: url(img/Banner1.jpg), url(img/Banner2.jpg);
+    /*background-image: url(img/Banner1.jpg), url(img/Banner2.jpg);*/
+    background-image: url(img/Banner1\ nb.png), url(img/Banner2\ nb.png);
     background-size: 49.5% auto, 52% auto;
     background-repeat: no-repeat;
     background-position: left, right;
@@ -159,7 +160,7 @@ li > * {
     header{
         
         align-items: flex-end;
-        background-image: url(img/Banner1.jpg);
+        background-image: url(img/Banner1\ nb.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
