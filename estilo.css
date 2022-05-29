@@ -2,16 +2,16 @@
 *{
     box-sizing: border-box;
 
-    /*revisar paddding y margin de h1*/
 }
 
 /*html,body*/
 * {
     margin: 0;
     padding: 0;
-    
+  
 }
 
+/*Estilo general de las etiquetas semánticas*/
 body {
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@ body {
     align-items: stretch;
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 
 header{
@@ -39,12 +40,18 @@ header{
 main{
     flex: 1 1 75%;
     background-color: beige;
+    /*max-width: 100%;*/
 }
+
+
 
 footer{
     flex: 1 1 5%;
     background-color: black;
+
 }
+
+/*Estilo del Banner */
 
 .Logo{
      align-self: center;
@@ -109,6 +116,163 @@ li > * {
     font-size: 25px;
 }
 
+/* Estilo de Menu*/
+
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    width: 85vw;
+    height: 65vh;
+    margin: 5vh auto;
+    gap: 10%;
+    align-self: center;
+
+}
+
+.contenedorItem{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0, 0.2);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-bottom: 0;
+}
+
+.contenedorImagen img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contenedorImagen img:hover{
+    transform: scale(1.2);
+}
+
+.contenedorTexto{
+    background-color: white;
+    border: 1px solid;
+}
+.menuTitulo{
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+.menuDescripcion{
+    padding: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilo de la seccion contactos*/
+
+#contactoMain{
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+    border-left: 2px solid;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contacto h2{
+    padding-bottom: 3%;
+    padding-left: 3%;    
+}
+
+#contacto h3 {
+    border-left: 1px solid;
+    margin-left: 3%;
+    padding-left: 3%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #878787;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contacto iframe{
+    align-self: center;
+    justify-self: center;
+    margin-top: 10%;
+    width: 95%;
+    
+}
+
+
+#camposFormulario{
+    max-width: 100%;
+    display: block;
+
+}
+
+.renglonForm{
+    max-width: 100%;
+    display: block;
+    padding: 10px 0px;
+}
+
+.renglonForm label{
+    display: inline-block;
+}
+
+
+.renglonForm input,textarea{
+    display: block;
+    width: 40%;
+    padding: 10px 10px;
+    border: 1px solid black;
+    font-size: 16px; 
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 30px;
+  }
+
+
 .columnas{
     display: flex;
     gap: 2vw;
@@ -116,13 +280,17 @@ li > * {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 100%;
+    width: 95%;
     height: 100%;
 }  
 
 .columnas > * {
     flex-basis: 20vw;
 }
+
+
+
+/* Estilo del Footer */
 
 .social{
     display: flex;
@@ -144,6 +312,8 @@ li > * {
     to{ justify-content: flex-end }
   }
 */
+
+/*Media queries para dispositivos con menor resolucion*/
 
 @media only screen and (max-width: 1200px) and (min-width:900px) {
     header{
@@ -172,6 +342,16 @@ li > * {
             letter-spacing: 15px;
             line-height: 50px;
             font-size: 35px
+        }
+        .menu{
+            flex-direction: column;
+            width: 80vw;
+            height: auto;
+
+        }
+        #contactoMain{
+            flex-direction: column;
+
         }
 
 }
@@ -202,6 +382,14 @@ li > * {
             line-height: 50px;
             font-size: 30px;
             }
+        .menu{
+            flex-direction: column;
+            width: 80vw;
+            height: auto;
+        }
+        #contactoMain{
+            flex-direction: column;
+        }
     }
 @media only screen and (max-width: 500px) {
 
@@ -230,4 +418,17 @@ li > * {
         text-underline-offset: 5px;
         padding: 0;
         }
+        .menu{
+            flex-direction: column;
+            width: 80vw;
+            height: auto;
+        }
+        #contactoMain{
+            flex-direction: column;
+            
+        }
+        input,textarea{
+            min-width: fit-content
+        }
+
 }

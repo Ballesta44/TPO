@@ -17,29 +17,68 @@
 
             <div class="Logo"><h3>Lorem Pizzu<span id="UltimaLetra">m</span></h3></div>
             <ul id="HeaderItem2">
-                <li id="primerItem"> <a href="index.html">Inicio</a></li>
+                <li id="primerItem"> <a href="index.html" target="_self">Inicio</a></li>
                 <li> <a href="Historia.html">Historia</a></li>
                 <li> <a href="Menu.html">Menu</a> </li>
                 <li> <a href="Contacto.html">Contacto</a> </li>
             </ul>
     </header>
 
-    <main>
-        
-        <div class="columnas">
+    <main >
+        <div id="contactoMain">
+        <section id="contacto">
+            <h2>Acercate a nuestra sucursal frente al Parque Patricios:</h2>
+            <h3>Caseros 3018</h3>
+            <h3>Martes a jueves 20 a 23hs</h3>
+            <h3>Sabados y Domingos 19 a 24hs</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1641.35414108852!2d-58.40719032262481!3d-34.63681151849919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1653848381463!5m2!1sen!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <aside id="formulario">
+            <div id="textoFormulario">
+                <h3>Podés enviarnos tu opinión, sugerencias o consultas a través del formulario de contacto.</h3>
+                <h3>Si estás interesado en formar parte de nuestro equipo envianos tus datos y adjuntá tu CV.</h3>
+            </div>
+            
+            <div id="camposFormulario">
+                <form name="formulario" onsubmit="return validoFormulario()">
+                    <div class="renglonForm">
+                        <label for="fname">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
+                    </div>
+                    <div class="renglonForm">
+                        <label for="fname">Apellido *</label>
+                        <input type="text" id="Apellido" name="apellido" placeholder="Ingresá tu Apellido">
+                    </div>
+                    <div class="renglonForm">
+                        <label for="fname">Pais *</label>
+                        <input type="text" id="Pais" name="pais" placeholder="Ingresá tu Pais">
+                    </div>
+                    <div class="renglonForm">
+                        <label for="fname">Ciudad *</label>
+                        <input type="text" id="Ciudad" name="ciudad" placeholder="Ingresá tu Ciudad">
+                    </div>
+                    <div class="renglonForm">
+                        <label for="fname">Telefono *</label>
+                        <input type="tel    " id="Telefono" name="telefono" placeholder="Ingresá tu Telefono" placeholder="me@example.com">
+                    </div>
+                    <div class="renglonForm">
+                        <label for="fname">Email *</label>
+                        <input type="email" id="Email" name="email" placeholder="Ingresá tu Email"  placeholder="me@example.com">
+                    </div>
+                    <div class="renglonForm">
+                        <label for="fname">Comentarios </label>
+                        <textarea type="textinput" placeholder="Decinos lo que pensás"></textarea>
 
-            <article class="recuadros"> <img src="img/itssomething.JPG" alt="" style="width: 100%"> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo repudiandae in ab architecto expedita eos inventore nostrum dolorum! Perspiciatis ducimus ea fuga asperiores earum vel repudiandae deleniti dicta voluptatibus libero quo cum excepturi perferendis facilis, dolore autem blanditiis sit iusto magni harum iure esse? Fugit quibusdam quae aliquam laborum doloribus deserunt iste culpa? Quis est molestias sunt perferendis illum quae ea quibusdam, facere natus autem veniam fugiat, molestiae deleniti fuga asperiores aut nostrum ut provident eaque, ad magnam optio nulla. Accusamus voluptates, facilis quo facere veritatis ipsum nulla, neque a velit vel error laudantium dolor officia animi voluptatum doloremque.</article>
-
-            <article class="recuadros"> <img src="img/itssomething.JPG" alt="" style="width: 100%"> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo repudiandae in ab architecto expedita eos inventore nostrum dolorum! Perspiciatis ducimus ea fuga asperiores earum vel repudiandae deleniti dicta voluptatibus libero quo cum excepturi perferendis facilis, dolore autem blanditiis sit iusto magni harum iure esse? Fugit quibusdam quae aliquam laborum doloribus deserunt iste culpa? Quis est molestias sunt perferendis illum quae ea quibusdam, facere natus autem veniam fugiat, molestiae deleniti fuga asperiores aut nostrum ut provident eaque, ad magnam optio nulla. Accusamus voluptates, facilis quo facere veritatis ipsum nulla, neque a velit vel error laudantium dolor officia animi voluptatum doloremque.</article>
-
-            <article class="recuadros"> <img src="img/itssomething.JPG" alt="" style="width: 100%"> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo repudiandae in ab architecto expedita eos inventore nostrum dolorum! Perspiciatis ducimus ea fuga asperiores earum vel repudiandae deleniti dicta voluptatibus libero quo cum excepturi perferendis facilis, dolore autem blanditiis sit iusto magni harum iure esse? Fugit quibusdam quae aliquam laborum doloribus deserunt iste culpa? Quis est molestias sunt perferendis illum quae ea quibusdam, facere natus autem veniam fugiat, molestiae deleniti fuga asperiores aut nostrum ut provident eaque, ad magnam optio nulla. Accusamus voluptates, facilis quo facere veritatis ipsum nulla, neque a velit vel error laudantium dolor officia animi voluptatum doloremque.</article>
-
+                    </div>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
-
+        </aside>
         
+
     </main>
-        <aside>
-    </aside>
+
 
 
     <footer>
@@ -47,7 +86,6 @@
         <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
         <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-
         </div>
     </footer>
 </body>
