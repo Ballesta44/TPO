@@ -1,17 +1,15 @@
 
-*{
-    box-sizing: border-box;
-
-}
-
 /*html,body*/
-* {
+* { 
     margin: 0;
     padding: 0;
-  
-}
+    box-sizing: border-box;
+ }
+
+
 
 /*Estilo general de las etiquetas semánticas*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -24,7 +22,7 @@ body {
 }
 
 header{
-    flex: 1 1 20%;
+    flex: 1 1 15%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -35,12 +33,11 @@ header{
     background-size: 50% auto, 50% auto;
     background-repeat: no-repeat;
     background-position: left, right;
-    
+    max-height: 20vh;
 }
 main{
     flex: 1 1 75%;
     background-color: beige;
-    /*max-width: 100%;*/
 }
 
 
@@ -48,7 +45,7 @@ main{
 footer{
     flex: 1 1 5%;
     background-color: black;
-
+    max-height: 5vh;
 }
 
 /*Estilo del Banner */
@@ -64,8 +61,8 @@ footer{
     color:white;
     font-weight: bold;
     letter-spacing: 15px;
-    line-height: 120px;
-    font-size: 60px;
+    line-height: 100px;
+    font-size: 40px;
     text-decoration: underline;
     text-underline-offset: 20px;
 }
@@ -95,17 +92,16 @@ a:hover {
 }
 
 #HeaderItem2{
-    
+ 
     justify-content: center;
     font-family: 'Manrope', sans-serif;
-    
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     
 }
 
 li {
-    padding: 0 30px;
+    padding: 0 20px;
     align-self: flex-end;
     border-left: 2px solid rgb(224, 217, 199);
     }
@@ -113,7 +109,7 @@ li {
 li > * {
     color: goldenrod;
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 /* Estilo de Menu*/
@@ -127,10 +123,10 @@ li > * {
     margin: 5vh auto;
     gap: 10%;
     align-self: center;
-
 }
 
 .contenedorItem{
+    
     background-color: beige;
     display: flex;
     flex-direction: column;
@@ -168,13 +164,15 @@ li > * {
 }
 .menuTitulo{
     margin-top: 20px;
-    padding: 20px;
+    padding: 12px;
     font-family: 'Manrope', sans-serif;
+    font-size: 20px;
 }
 .menuDescripcion{
     padding: 20px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 /*Estilo de la seccion contactos*/
@@ -295,14 +293,14 @@ li > * {
 .social{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     gap: 40px;
     
 }
 
 .social > *{
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 25px;
     
 }
 
