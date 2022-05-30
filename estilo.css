@@ -335,9 +335,12 @@ height: auto;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
   }
-
+  .boton:hover {opacity: 1.5}
 
 
 /* Estilo del Footer */
