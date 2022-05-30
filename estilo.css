@@ -60,7 +60,8 @@ footer{
 /*Estilo del Banner*/
 
 .Logo{
-     align-self: center;
+    display: flex;
+    align-self: center;
     justify-self: center;
     color: white;
     text-align: center;
@@ -74,6 +75,10 @@ footer{
     font-size: 40px;
     text-decoration: underline;
     text-underline-offset: 20px;
+}
+
+.logo h3 {
+    display: flex;
 }
 
 #UltimaLetra{
@@ -142,6 +147,7 @@ li > * {
     margin-right: 15vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
+
 }
 
 
@@ -187,7 +193,8 @@ height: auto;
     justify-content: center;
     background-color: beige;
     width: 85vw;
-    height: 65vh;
+    /*height: 65vh;*/
+    /*height: 85%;*/
     margin: 5vh auto;
     gap: 10%;
     align-self: center;
@@ -201,7 +208,6 @@ height: auto;
     align-items: center;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0, 0.2);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
 
 .contenedorImagen{
@@ -214,6 +220,8 @@ height: auto;
     height: 100%;
     border: 1px solid;
     border-bottom: 0;
+    min-height: 100px;
+    max-height: 350px;
 }
 
 .contenedorImagen img{
@@ -231,8 +239,9 @@ height: auto;
     border: 1px solid;
 }
 .menuTitulo{
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 20px;
+    padding-bottom: 0;
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
 }
@@ -395,6 +404,10 @@ height: auto;
             width: 80vw;
             height: auto;
         }
+        .contenedorImagen {
+            max-height: none;
+        }
+
         .contenedorItem{
             margin-top: 40px;
 
@@ -439,7 +452,9 @@ height: auto;
         }
         .contenedorItem{
             margin-top: 40px;
-
+        }
+        .contenedorImagen {
+            max-height: none;
         }
         #contactoMain{
             flex-direction: column;
@@ -479,7 +494,9 @@ height: auto;
         }
         .contenedorItem{
             margin-top: 40px;
-
+        }
+        .contenedorImagen {
+            max-height: none;
         }
         #contactoMain{
             flex-direction: column;
