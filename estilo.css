@@ -39,7 +39,7 @@ header{
     background-size: 50% auto, 50% auto;
     background-repeat: no-repeat;
     background-position: left, right;
-    max-height: 20vh;
+    /*max-height: 20vh;*/
     justify-self: flex-start;
 }
 main{
@@ -194,7 +194,7 @@ height: auto;
 }
 
 .contenedorItem{
-    
+    flex: 1;
     background-color: beige;
     display: flex;
     flex-direction: column;
@@ -394,6 +394,9 @@ height: auto;
             flex-direction: column;
             width: 80vw;
             height: auto;
+        }
+        .contenedorItem{
+            margin-top: 40px;
 
         }
         #contactoMain{
@@ -433,6 +436,10 @@ height: auto;
             flex-direction: column;
             width: 80vw;
             height: auto;
+        }
+        .contenedorItem{
+            margin-top: 40px;
+
         }
         #contactoMain{
             flex-direction: column;
