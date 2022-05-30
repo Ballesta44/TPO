@@ -162,21 +162,22 @@ li > * {
 display: block;
 max-width: 100%;
 height: auto;
-margin: 20px;
-
 }
 
 #imgHistoria1{
+    margin: 20px;
     float: right;
-    margin-left: 30px;
+    margin-right: 0;
 }
 #imgHistoria2{
+    margin: 20px;
     float: left;
-    margin-right: 30px;
+    margin-left: 0;
 }
 #imgHistoria3{
+    margin: 20px;
     float: right;
-    margin-left: 30px;
+    margin-right: 0;
 }
 
 /* Estilo de Menu*/
@@ -355,12 +356,6 @@ margin: 20px;
     
 }
 
-/*
-@keyframes moveAnim {
-    from { justify-content: center }
-    to{ justify-content: flex-end }
-  }
-*/
 
 /*Media queries para dispositivos con menor resolucion*/
 
