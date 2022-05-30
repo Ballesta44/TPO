@@ -477,6 +477,10 @@ height: auto;
             width: 80vw;
             height: auto;
         }
+        .contenedorItem{
+            margin-top: 40px;
+
+        }
         #contactoMain{
             flex-direction: column;
             
