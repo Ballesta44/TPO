@@ -1,6 +1,4 @@
 
-
-
 function validoFormulario() {
     let nombre = document.forms["formulario"]["nombre"].value
     let apellido = document.forms["formulario"]["apellido"].value
@@ -8,7 +6,7 @@ function validoFormulario() {
     let ciudad = document.forms["formulario"]["ciudad"].value
     let telefono = document.forms["formulario"]["telefono"].value
     let email = document.forms["formulario"]["email"].value
-    let letras = new RegExp('^[A-Z]+$', 'i');
+    let letras = new RegExp('^[ a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\'\`\'\-]+$', 'i');
 
     if (nombre == "") {
       alert("Debe completar su nombre");
