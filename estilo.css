@@ -7,7 +7,10 @@
 
  }
 
-
+ html {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /*Estilo general de las etiquetas semánticas*/
 
@@ -37,11 +40,12 @@ header{
     background-repeat: no-repeat;
     background-position: left, right;
     max-height: 20vh;
+    justify-self: flex-start;
 }
 main{
     flex: 1 1 75%;
     background-color: beige;
-    
+
 }
 
 
@@ -50,7 +54,7 @@ footer{
     flex: 1 1 5%;
     background-color: black;
     max-height: 5vh;
-    /*justify-self: flex-end;*/
+    justify-self: flex-end;
 }
 
 /*Estilo del Banner */
@@ -115,6 +119,51 @@ li > * {
     color: goldenrod;
     display: inline-block;
     font-size: 15px;
+}
+
+/* Estilo de la Historia */
+
+#contenedorGeneral{
+    max-width: 100%;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+#tituloHistoria {
+    padding-bottom: 3vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cuerpoHistoria > p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 2;
+    font-size: 18px;
+
+}
+
+#contenedorHistoria > img{
+display: block;
+max-width: 100%;
+height: auto;
+margin: 20px;
+
+}
+
+#imgHistoria1{
+    float: right;
+    margin-left: 30px;
+}
+#imgHistoria2{
+    float: left;
+    margin-right: 30px;
+}
+#imgHistoria3{
+    float: right;
+    margin-left: 30px;
 }
 
 /* Estilo de Menu*/
@@ -433,5 +482,9 @@ li > * {
         input,textarea{
             min-width: fit-content
         }
+        #imgHistoria1, #imgHistoria2, #imgHistoria3 {
+            display: none;
+        } 
+
 
 }
